@@ -13,6 +13,9 @@
 		6408CCE12690304D0064CF14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6408CCDF2690304D0064CF14 /* Main.storyboard */; };
 		6408CCE32690304F0064CF14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6408CCE22690304F0064CF14 /* Assets.xcassets */; };
 		6408CCE62690304F0064CF14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6408CCE42690304F0064CF14 /* LaunchScreen.storyboard */; };
+		6495D5252693425200646921 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6495D5242693425200646921 /* SecondViewController.swift */; };
+		64E62E4726944BBA00D3A29E /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E62E4626944BBA00D3A29E /* ThirdViewController.swift */; };
+		64F8839B26958C62008ABA17 /* fourthTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F8839A26958C62008ABA17 /* fourthTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +26,9 @@
 		6408CCE02690304D0064CF14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6408CCE22690304F0064CF14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6408CCE52690304F0064CF14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		6408CCE72690304F0064CF14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6495D5242693425200646921 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		64E62E4626944BBA00D3A29E /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		64F8839A26958C62008ABA17 /* fourthTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fourthTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +63,23 @@
 			children = (
 				6408CCD92690304D0064CF14 /* AppDelegate.swift */,
 				6408CCDB2690304D0064CF14 /* SceneDelegate.swift */,
-				6408CCDD2690304D0064CF14 /* ViewController.swift */,
+				64F8839D2695AF5D008ABA17 /* controller */,
 				6408CCDF2690304D0064CF14 /* Main.storyboard */,
 				6408CCE22690304F0064CF14 /* Assets.xcassets */,
 				6408CCE42690304F0064CF14 /* LaunchScreen.storyboard */,
-				6408CCE72690304F0064CF14 /* Info.plist */,
 			);
 			path = "code animated";
+			sourceTree = "<group>";
+		};
+		64F8839D2695AF5D008ABA17 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				6408CCDD2690304D0064CF14 /* ViewController.swift */,
+				6495D5242693425200646921 /* SecondViewController.swift */,
+				64E62E4626944BBA00D3A29E /* ThirdViewController.swift */,
+				64F8839A26958C62008ABA17 /* fourthTableViewController.swift */,
+			);
+			path = controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +152,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6495D5252693425200646921 /* SecondViewController.swift in Sources */,
 				6408CCDE2690304D0064CF14 /* ViewController.swift in Sources */,
+				64E62E4726944BBA00D3A29E /* ThirdViewController.swift in Sources */,
+				64F8839B26958C62008ABA17 /* fourthTableViewController.swift in Sources */,
 				6408CCDA2690304D0064CF14 /* AppDelegate.swift in Sources */,
 				6408CCDC2690304D0064CF14 /* SceneDelegate.swift in Sources */,
 			);
@@ -295,7 +313,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "stephen1.code-animated";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -313,7 +331,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "stephen1.code-animated";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
